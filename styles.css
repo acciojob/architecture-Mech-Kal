@@ -1,1 +1,149 @@
-/*  your css code here. If applicable */
+/* Custom instruction: Use -> instead of \rightarrow */
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* Center the main content block */
+}
+
+/* Structure Styling */
+#main-wrapper {
+    width: 1100px; /* Enforce the required total width */
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+h1, h2 {
+    color: #004a7c; /* Dark blue heading color */
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+/* Image Container Styling */
+.imageContainer {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.main-image {
+    max-width: 100%; /* Ensures image scales within the container's width */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.caption {
+    font-style: italic;
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Table fills the 1100px container (minus padding) */
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
+}
+
+table th {
+    background-color: #e6f7ff; /* Light blue header background */
+    color: #004a7c;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Specific Column Styling */
+/* Note: Widths are set inline in HTML for precision, but ensuring layout integrity here */
+
+.text-content {
+    background-color: #fcfcfc;
+}
+
+.objective-section {
+    background-color: #f0f8ff; /* Very light blue for the objective */
+}
+
+.text-content h3 {
+    color: #c0392b; /* Reddish heading for contrast */
+    margin-top: 0;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+.text-content ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+}
+
+.text-content ul li {
+    margin-bottom: 5px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><circle cx="5" cy="5" r="4" fill="%232980b9"/></svg>') no-repeat left 5px;
+    padding-left: 15px; /* Space for the custom bullet */
+    line-height: 1.4;
+}
+
+/* Image Cell Styling */
+td img.table-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the smaller images within info boxes */
+.info-box {
+    text-align: center;
+    padding: 5px;
+}
+
+.info-box p {
+    font-size: 0.85em;
+    margin: 5px 0 0 0;
+    line-height: 1.3;
+}
+
+.info-box img.table-img-small {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover; /* Ensures image covers area without distortion */
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.green-offer {
+    background-color: #e8f5e9; /* Light green background for the GreenFloor section */
+    border-left: 5px solid #4caf50;
+    padding-left: 10px;
+}
